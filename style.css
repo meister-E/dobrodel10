@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ece939;
+}
+
+body * {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.header {
+    background: #eca939;
+    border: 1px solid green;
+    padding: 40px;
+}
+
+.content_1 {
+    background: #e21a0c;
+    border: 1px solid #10f797;   
+}
