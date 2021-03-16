@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 header {
@@ -19,8 +20,8 @@ header {
 
 
 .tagline {
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .panel {
@@ -35,7 +36,7 @@ header {
 .buttonH {
     min-width: 170px;
     margin: 7px;
-    border: solid 1px white;
+    border: solid 2px white;
     background-color: black;
     color: white;
     text-emphasis-color: white;
@@ -47,13 +48,13 @@ header {
 
 .buttonH:hover {
     color: white;
-    background-color:rgba(15, 228, 121, 0.925);
+    background-color: #00897b;
     border: 1px solid transparent;
     transition: 0.5s;
 }
 
 .about {
-    margin-top: 80px;
+    padding: 90px 0;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -84,7 +85,7 @@ header {
 }
 
 .firstPlus > p, .secondPlus > p, .thirdPlus > p {
-    width: 50%;
+    max-width: 50%;
     text-align: center;
 }
 
@@ -93,9 +94,80 @@ header {
     flex-flow: column;
     align-items: center;
     justify-content: space-around;
-    min-height: 23vh;
+    min-height: 28vh;
 }
 
 .response {
-    
+   background-color: #e4fdf9;
+   padding: 130px 0 100px ;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+}
+
+.titleResponce {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.textResponce {
+    text-align: center;
+    margin-bottom: 85px;
+    width: 50%;
+}
+
+.tellMes {
+    display: flex;
+}
+
+.callOne {
+    background-color: white;
+    padding: 0 30px;
+    margin: 0 40px;
+    min-height: 370px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.callOne:hover {
+    background-color: #00897b;
+    color: white;
+    transition: 0.5s;
+}
+
+.callOne:hover svg path
+{
+    fill: #fff;
+    transition: 0.5s
+}
+
+.inform {
+    border: 2px solid black;
+    padding: 20px;
+    min-width: 200px;
+    text-decoration: none;
+    color: black;
+}
+
+.callOne:hover .inform {
+    border: 2px solid white;
+    color: white;
+    transition: 0.5s
+}
+
+.titleDeeds {
+    text-align: center;
+    font-weight: 400;
+    margin: 90px 0;
+}
+
+.doneDeeds {
+    display: flex;
+    flex-flow: column;
+    margin: 40px 0;
+    border: 1px solid red;
 }
