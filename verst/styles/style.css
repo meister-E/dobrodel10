@@ -26,7 +26,7 @@ header {
 
 .panel {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     Background-color: black;
@@ -106,7 +106,6 @@ header {
 }
 
 .titleResponce {
-    text-align: center;
     margin-bottom: 35px;
 }
 
@@ -162,12 +161,100 @@ header {
 .titleDeeds {
     text-align: center;
     font-weight: 400;
-    margin: 90px 0;
+    margin: 75px 0;
+}
+
+.goodDeeds {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 40px 0;
 }
 
 .doneDeeds {
+    width: 80vw;
     display: flex;
-    flex-flow: column;
-    margin: 40px 0;
-    border: 1px solid red;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+}
+
+.doneDeeds.reversed
+{
+    flex-flow: row-reverse wrap;
+}
+
+.musorImage {
+    width: 500px;
+    display: block;
+    border-radius: 20px;
+    margin-right: 55px;
+}
+
+.messagesDeeds {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.messagesDeeds > p {
+    width: 50%;
+}
+
+.doneDeeds:nth-child(3) {
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+}
+
+.doneDeeds:nth-child(2) .musorImage {
+    margin-right: 0;
+    margin-left: 55px;
+}
+
+.descriptionDeeds {
+    width: 50%;
+}
+
+.textDeeds {
+    margin-top: 40px;
+}
+
+.allDeeds {
+    margin: 0 auto;
+}
+
+.nameApplication:hover {
+    color: #00897b;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.6s;
+}
+
+footer {
+    background-color: #212121;
+    color:white;
+    padding: 90px 0;
+}
+
+.descriptionFooter{
+    margin: 0 auto;
+    max-width: 45%;
+    text-align: center;
+}
+
+.messagesFooter {
+    margin-top: 20px;
+}
+
+.items {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.itemsImg {
+    width: 75px;
 }
