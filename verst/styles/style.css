@@ -7,7 +7,7 @@
 
 header {
     display: flex;
-    min-width: 100vw;
+    width: 100%;
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
@@ -122,7 +122,7 @@ header {
 .callOne {
     background-color: white;
     padding: 0 30px;
-    margin: 0 40px;
+    margin-right: 50px;
     min-height: 370px;
     display: flex;
     flex-flow: column;
@@ -202,10 +202,11 @@ header {
     width: 50%;
 }
 
-.doneDeeds:nth-child(3) {
+/*.doneDeeds:nth-child(3) {
     flex-flow: row-reverse;
     justify-content: flex-end;
 }
+*/
 
 .doneDeeds:nth-child(2) .musorImage {
     margin-right: 0;
@@ -235,6 +236,7 @@ footer {
     background-color: #212121;
     color:white;
     padding: 90px 0;
+    width: 100%;
 }
 
 .descriptionFooter{
@@ -249,12 +251,28 @@ footer {
 
 .items {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     align-items: center;
-    text-decoration: none;
     color: white;
+    max-width: 300px;
+}
+
+.footerItems {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 60px;
 }
 
 .itemsImg {
-    width: 75px;
+    width: 105px;
+    margin-bottom: 28px;
+}
+
+.footerItemA {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
