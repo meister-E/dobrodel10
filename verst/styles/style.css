@@ -122,7 +122,7 @@ header {
 .callOne {
     background-color: white;
     padding: 0 30px;
-    margin-right: 50px;
+    margin: 0 35px;
     min-height: 370px;
     display: flex;
     flex-flow: column;
@@ -275,4 +275,30 @@ footer {
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
+}
+
+/* Media */
+
+@media (max-width: 376px) {
+    .tellMes {
+        flex-flow: column;
+    }
+
+    .callOne {
+        margin-top: 40px;
+    }
+
+    .allDeeds {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .musorImage {
+        width: 250px;
+    }
+
+    main {
+        max-width: 500px;
+    }
 }
